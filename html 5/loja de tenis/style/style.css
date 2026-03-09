@@ -1,0 +1,145 @@
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header / Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: #222;
+}
+
+.logo span {
+  color: #ff4757; /* Cor de destaque */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff4757;
+}
+
+/* Banner */
+.hero-banner {
+  height: 400px;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("https://images.unsplash.com/photo-1460353581641-37baddabef2?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.banner-content h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #ff4757;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #e03d4b;
+}
+
+/* Container de Produtos */
+.container {
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.products-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product-card h4 {
+  margin: 15px 0 5px;
+}
+
+.product-card p {
+  color: #ff4757;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.product-card button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #222;
+  color: #fff;
+  margin-top: 50px;
+}
