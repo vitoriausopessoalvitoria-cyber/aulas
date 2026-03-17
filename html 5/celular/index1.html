@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- Define que o documento usa HTML5 -->
+
+<html lang="pt-BR">
+<!-- Início do documento HTML e define o idioma como português do Brasil -->
+
+<head>
+
+<meta charset="UTF-8">
+<!-- Define a codificação de caracteres para suportar acentos -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Faz o site se adaptar a celulares e telas menores -->
+
+<title>Festival de Música 2026</title>
+<!-- Título que aparece na aba do navegador -->
+
+<style>
+
+/* Estilo geral da página */
+body{
+margin:0; /* Remove margens padrão */
+font-family: Arial, Helvetica, sans-serif; /* Define a fonte */
+background:#111; /* Cor de fundo escura */
+color:#ffffff; /* Cor do texto branca */
+}
+
+/* Estilo do cabeçalho com imagem */
+header{
+background:url("data:image/jpeg;base64,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") center/cover no-repeat;
+/* Define uma imagem de fundo centralizada cobrindo o espaço */
+
+height:60vh; /* Altura do cabeçalho (60% da altura da tela) */
+
+display:flex; /* Usa flexbox para alinhar conteúdo */
+align-items:center; /* Centraliza verticalmente */
+justify-content:center; /* Centraliza horizontalmente */
+text-align:center; /* Centraliza o texto */
+}
+
+/* Estilo do título principal */
+header h1{
+font-size:3rem; /* Tamanho grande da fonte */
+background:rgba(0, 0, 0, 0.6); /* Fundo escuro transparente */
+padding:20px; /* Espaçamento interno */
+border-radius:10px; /* Cantos arredondados */
+}
+
+/* Container principal do conteúdo */
+.container{
+max-width:1000px; /* Largura máxima */
+margin:auto; /* Centraliza na página */
+padding:40px 20px; /* Espaçamento interno */
+}
+
+/* Área com informações do evento */
+.info{
+display:grid; /* Usa grid layout */
+grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+/* Cria colunas responsivas */
+
+gap:20px; /* Espaço entre os elementos */
+margin-top:20px; /* Espaço acima */
+}
+
+/* Cards com informações */
+.card{
+background:#ff106b; /* Fundo escuro */
+padding:20px; /* Espaçamento interno */
+border-radius:10px; /* Bordas arredondadas */
+}
+
+/* Seção do line-up */
+.lineup{
+margin-top:40px; /* Espaço acima da seção */
+}
+
+/* Remove estilo padrão da lista */
+.lineup ul{
+list-style:none;
+padding:0;
+}
+
+/* Estilo de cada artista na lista */
+.lineup li{
+padding:10px;
+border-bottom:1px solid #493d44; /* Linha separadora */
+}
+
+/* Botão de compra */
+.btn{
+display:inline-block; /* Permite aplicar largura e altura */
+margin-top:20px; /* Espaço acima */
+padding:15px 25px; /* Espaçamento interno */
+background:#ff2e63; /* Cor do botão */
+color:white; /* Cor do texto */
+text-decoration:none; /* Remove sublinhado */
+border-radius:8px; /* Bordas arredondadas */
+font-weight:bold; /* Texto em negrito */
+}
+
+/* Efeito ao passar o mouse no botão */
+.btn:hover{
+background:#ff4f7a;
+}
+
+/* Rodapé */
+footer{
+text-align:center; /* Centraliza texto */
+padding:20px; /* Espaçamento interno */
+background:#fd1374; /* Fundo preto */
+margin-top:40px; /* Espaço acima */
+}
+
+</style>
+</head>
+
+<body>
+
+    
+<header>
+<!-- Cabeçalho principal do evento -->
+ 
+<h1>Iphone
+
+</h1>
+
+</header>
+
+
+<section class="container">
+<!-- Área principal com conteúdo -->
+
+<h2>Iphone de ultima geração</h2>
+<!-- Descrição do evento -->
+ <h2>Nosso catalogo</h2>
+ 
+<p>
+A Apple é uma empresa de tecnologia dos Estados Unidos, fundada em 1976, famosa por criar produtos como iPhone,
+   iPad e Mac. Ela é uma das marcas mais conhecidas do mundo e se destaca pela inovação, design moderno e integração entre seus dispositivos.
+
+</p>
+<h2>Atrações do Festival VibraSom</h2>
+
+<P>O VibraSom traz para o palco alguns dos maiores nomes da cena musical atual, garantindo uma experiência inesquecível para o público:
+
+ <div class="info">
+<!-- Área com informações básicas do evento -->
+
+<a class="btn" href="#">comprar</a>
+
+</div>
+
+<div class="lineup">
+<!-- Lista de artistas -->
+<h2>Nossas Opções</h2>
+
+<ul>
+    <li>
+        <a href="indexiphone.html">iphone</a>
+
+</li>
+<li>
+    <a href="indexsamsung.html">samsung</a>  
+</li>
+<li>
+<a href="indexmotorola.html">motorola</a>
+</li>
+<li>
+<a href="indexxiaomi.html">xiaomi</a>
+</li>
+</ul>
+
+</div>
+
+<!-- Botão de compra de ingressos -->
+<a class="btn" href="#">Voltar</a>
+<a class="btn" href="index-cantor1.html">Proximo</a>
+
+
+</section>
+
+<footer>
+<!-- Rodapé da página -->
+<p>© Site de celulares | Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
